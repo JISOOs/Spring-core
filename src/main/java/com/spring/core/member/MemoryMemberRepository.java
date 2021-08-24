@@ -1,0 +1,20 @@
+package com.spring.core.member;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MemoryMemberRepository implements  MemberRepository{
+
+    private Map<Long,Member> store = new HashMap<>();
+
+    @Override
+    public void save(Member member) {
+        store.put(member.getId(), member);
+
+    }
+
+    @Override
+    public Member findById(long id) {
+        return store.get(id);
+    }
+}
