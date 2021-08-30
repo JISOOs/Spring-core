@@ -2,21 +2,21 @@ package com.spring.core.member;
 
 public class Member {
 
-    private long id;
+    private Long id;
     private String name;
     private Grade grade;
 
-    public Member(long id, String name, Grade grade) {
+    public Member(Long id, String name, Grade grade) {
         this.id = id;
         this.name = name;
         this.grade = grade;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

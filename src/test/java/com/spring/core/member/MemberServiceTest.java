@@ -9,7 +9,7 @@ public class MemberServiceTest {
     void join() {
         MemberService memberService = new MemberServiceImpl();
         //given
-        Member newMember = new Member(1, "member1", Grade.VIP);
+        Member newMember = new Member(1L, "member1", Grade.VIP);
         //when
         memberService.join(newMember);
         Member findMember = memberService.findMember(1l);

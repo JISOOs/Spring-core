@@ -10,7 +10,7 @@ public class MemberApp {
     public static void main(String[] args) {
 
         MemberService memberService = new MemberServiceImpl();
-        Member newMember = new Member(1, "member1", Grade.VIP);
+        Member newMember = new Member(1L, "member1", Grade.VIP);
 
         memberService.join(newMember);
         Member findMember = memberService.findMember(newMember.getId());
